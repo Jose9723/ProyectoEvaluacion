@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="producto.html">Producto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <br>
+                            <a href="#" id="vaciar-carrito" class="botin">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="botin1" id="form-open">Inicia Sesión</button>
+        </div>
+
+    </header>
+    
+    <div class="container">
+        <div class="form-container my-4">
+            <h1 class="text-center">Encuesta sobre nuestra Página de Ropa</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre (opcional)</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre (opcional)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico (opcional)</label>
+                    <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico (opcional)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="satisfaccion">¿Cómo calificarías tu satisfacción general con la página de ropa?</label>
+                    <select class="form-control" id="satisfaccion">
+                        <option>Excelente</option>
+                        <option>Muy buena</option>
+                        <option>Buena</option>
+                        <option>Regular</option>
+                        <option>Deficiente</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>¿Qué te gustó más de nuestra página?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="diseño" value="diseño">
+                        <label class="form-check-label" for="diseño">
+                            Diseño atractivo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="facilidad" value="facilidad">
+                        <label class="form-check-label" for="facilidad">
+                            Facilidad de uso
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="productos" value="productos">
+                        <label class="form-check-label" for="productos">
+                            Variedad de productos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="precios" value="precios">
+                        <label class="form-check-label" for="precios">
+                            Precios competitivos
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sugerencias">¿Tienes alguna sugerencia para mejorar nuestra página?</label>
+                    <textarea class="form-control" id="sugerencias" rows="4" placeholder="Introduce tus sugerencias aquí"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar Encuesta</button>
+            </form>
+        </div>
+    </div>
+    <section class="home">
+        <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+          
+          <div class="form login_form">
+            <form action="#">
+              <h2>Inicia Sesión</h2>
+  
+              <div class="input_box">
+                <input type="email" placeholder="Ingresa tu correo electronico" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Ingresa tu contraseña" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Recordar</label>
+                </span>
+                <a href="#" class="forgot_pw">¿has olvidado tu contraseña?</a>
+              </div>
+  
+              <button class="button">Iniciar Sesión</button>
+  
+              <div class="login_signup">¿No tienes una cuenta? &nbsp;<a href="#" id="signup">Regístrate</a></div>
+            </form>
+          </div>
+  
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Regístrate</h2>
+  
+              <div class="input_box">
+                <input type="email" placeholder="Ingresa tu correo electronico" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Crear contraseña" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Confirmar contraseña" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <button class="button">Registrar</button>
+  
+              <div class="login_signup">¿Ya tienes una cuenta? &nbsp;<a href="#" id="login">Inicia Sesión</a></div>
+            </form>
+          </div>
+        </div>
+    </section>
+    <br>
+    <footer id="contacto">
+        <h1>Contactanos</h1>
+        <div class="mapa">
+        <div>
+            <ul class="wrapper">
+                <li class="icon telefono">
+                    <span class="tooltip">9xx9xx9xx</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon">
+                        <path 
+                            stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </li>
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <svg
+                  viewBox="0 0 320 512"
+                  height="1.2em"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <svg
+                  height="1.8em"
+                  fill="currentColor"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="twitter"
+                >
+                  <path
+                    d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+        </div>
+        <div class="container1 mt-4">
+            <h2 class="text-center mb-4">Encuentra nuestra ubicación</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15480.058057617898!2d-75.7371558!3d-14.0763202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e3a6e60b8c25%3A0xf591df23f20354d1!2sZegel%20-%20ICA!5e0!3m2!1ses-419!2spe!4v1723780719820!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        </div><br><br>
+        <p>© 2024 NOW Peru. The Rebel Souls Co.</p>
+    </footer>
+
+     <script src="scrip.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
